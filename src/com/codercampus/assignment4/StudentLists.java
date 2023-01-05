@@ -43,9 +43,9 @@ public class StudentLists {
 
 		}
 
-		Student[] newCompSciArray = new Student[compSciStudent.size()];
+		Student[] newCompSci = new Student[compSciStudent.size()];
 		for (int i = 0; i < compSciStudent.size(); i++) {
-			newCompSciArray[i] = compSciStudent.get(i);
+			newCompSci[i] = compSciStudent.get(i);
 		}
 
 		File file = new File("course1.csv");
@@ -53,17 +53,17 @@ public class StudentLists {
 		BufferedWriter bw = new BufferedWriter(fw);
 		bw.write("Student Id, Student Name, Course, Grade ");
 		bw.newLine();
-		for (int i = 0; i < newCompSciArray.length; i++) {
-			bw.append(String.valueOf(newCompSciArray[i]));
+		for (int i = 0; i < newCompSci.length; i++) {
+			bw.append(String.valueOf(newCompSci[i]));
 
 		}
 
 		bw.close();
 		fw.close();
 
-		Student[] newApmthStudentArray = new Student[apmthStudent.size()];
+		Student[] newApmthStudent = new Student[apmthStudent.size()];
 		for (int i = 0; i < apmthStudent.size(); i++) {
-			newApmthStudentArray[i] = apmthStudent.get(i);
+			newApmthStudent[i] = apmthStudent.get(i);
 		}
 
 		File file2 = new File("course2.csv");
@@ -71,17 +71,17 @@ public class StudentLists {
 		BufferedWriter bw2 = new BufferedWriter(fw2);
 		bw2.write("Student Id, Student Name, Course, Grade ");
 		bw2.newLine();
-		for (int i = 0; i < newApmthStudentArray.length; i++) {
-			bw2.append(String.valueOf(newApmthStudentArray[i]));
+		for (int i = 0; i < newApmthStudent.length; i++) {
+			bw2.append(String.valueOf(newApmthStudent[i]));
 
 		}
 
 		bw2.close();
 		fw2.close();
 
-		Student[] newStatStudentArray = new Student[statStudent.size()];
+		Student[] newStatStudent = new Student[statStudent.size()];
 		for (int i = 0; i < statStudent.size(); i++) {
-			newStatStudentArray[i] = statStudent.get(i);
+			newStatStudent[i] = statStudent.get(i);
 		}
 
 		File file3 = new File("course3.csv");
@@ -89,8 +89,8 @@ public class StudentLists {
 		BufferedWriter bw3 = new BufferedWriter(fw3);
 		bw3.write("Student Id, Student Name, Course, Grade ");
 		bw3.newLine();
-		for (int i = 0; i < newStatStudentArray.length; i++) {
-			bw3.append(String.valueOf(newStatStudentArray[i]));
+		for (int i = 0; i < newStatStudent.length; i++) {
+			bw3.append(String.valueOf(newStatStudent[i]));
 
 		}
 
